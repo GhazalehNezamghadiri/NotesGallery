@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            width: 100%;
+            height: 90px;
+            background-color: rgb(101, 99, 99);
+            text-align: center;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1;
+
+            >h2 {
+                margin-block: 30px;
+            }
+        }
+
+        main {
+            width: 100%;
+            /* background-color: rgb(156, 131, 97); */
+            margin-top: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 5px;
+
+
+            .gallery {
+                width: 490px;
+                height: 490px;
+                /* border: 2px solid black; */
+                position: relative;
+                overflow: hidden;
+
+                &:hover {
+                    >img {
+                        width: 530px;
+                        height: 530px;
+                        top: -20px;
+                        left: -20px;
+                    }
+
+                    >figcaption {
+                        bottom: 0px;
+
+                    }
+                }
+
+                >img {
+                    width: 490px;
+                    height: 490px;
+                    object-fit: cover;
+                    transition: 1s;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+
+
+                }
+
+                >figcaption {
+                    width: 100%;
+                    height: 50px;
+                    background-color: rgba(108, 106, 106, 0.321);
+                    color: white;
+                    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                    font-style: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    left: 0;
+                    bottom: -50px;
+                    transition: 1s;
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>
+            her favorite singers...!
+        </h2>
+    </header>
+
+    <main>
+        <figure class="gallery">
+            <img src="img/adele.jfif" alt="">
+            <figcaption>Adele</figcaption>
+        </figure>
+        <figure class="gallery">
+            <img src="img/billie eilish.jfif" alt="">
+            <figcaption>Billie Eilish</figcaption>
+        </figure>
+        <figure class="gallery">
+            <img src="img/drake.jfif" alt="">
+            <figcaption>Drake</figcaption>
+        </figure>
+        <figure class="gallery">
+            <img src="img/eminem.jfif" alt="">
+            <figcaption>Eminem</figcaption>
+        </figure>
+        <figure class="gallery">
+            <img src="img/halsey.jfif" alt="">
+            <figcaption>Halsey</figcaption>
+        </figure>
+        <figure class="gallery">
+            <img src="img/harry styles.jfif" alt="">
+            <figcaption>Harry Styles</figcaption>
+        </figure>
+        <figure class="gallery">
+            <img src="img/lana del ray1.jfif" alt="">
+            <figcaption>Lana Del Ray</figcaption>
+        </figure>
+        <figure class="gallery">
+            <img src="img/rihana.jfif" alt="">
+            <figcaption>Rihana</figcaption>
+        </figure>
+        <figure class="gallery">
+            <img src="img/travis scott.jfif" alt="">
+            <figcaption>Travis Scott</figcaption>
+        </figure>
+    </main>
+
+</body>
+
+</html>
